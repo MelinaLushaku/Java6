@@ -37,9 +37,24 @@ function shtoLajmin(){
   
   var element = document.getElementById("right-side")
   element.prepend(divi);
+
+ //Kodi per t'u fshir elementi i fundit
+  var nr = element.childElementCount;
+  
+    
+  if(nr == 7){
+    
+    element.removeChild(element.lastElementChild);
+}
+
+
+
+ /* var l = document.getElementById("right-side").lastChild.innerHTML;
+  element.removeChild(l);*/
   
   
-  
+
+
  /* var nr5 = document.getElementsByClassName('form-group');
   var parent = document.getElementsByClassName('right-side');
   parent.removeChild(nr5);*/
